@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+body {
+  background-image: linear-gradient(
+    rgb(0, 116, 62),
+    rgb(3, 152, 149)
+  );
+  height: 100vh; /* body ocupa 100% da altura vertical da página */
+
+  color: #ffffff;
+  font-family: sans-serif;
+
+  display: flex; /* Disposição "Alinhada" dos elementos no elemento body */
+  flex-direction: column;
+
+  align-items: center;
+
+}
+
+button {
+  background-color: inherit;
+  color: inherit;
+  border: none;
+}
+
+#below-cover {
+  margin: 0.5em 0 0.5em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Os elementos recebem um espaço entre eles no eixo x do elemento pai */
+  align-items: center; /* Os elementos centralizam no eixo y do elemento pai */
+}
+
+#button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /* Os elementos recebem espaços internos e externos no eixo x */
+  align-items: center;
+}
+
+.button {
+  font-size: 1.5em; /* 1.5x a fonte padrão */
+  cursor: pointer;
+}
+
+.button-navigate {
+  font-size: 3em;
+}
+
+.button-biggest {
+  font-size: 4em;
+}
+
+#cover {
+  width: 430px;
+}
+
+#playlist-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0.5em 0 0.5em 0;
+}
+
+#song-name {
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+#band-name {
+  font-size: 1em;
+}
+
+.light-color {
+  color: rgb(197, 202, 203);
+}
+
+#progress-bar {
+  background-color: rgb(197, 202, 203);
+  height: 3px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+#current-progress {
+  --progress: 0%;
+  background-color: #ffffff;
+  height: inherit; /* Herda o valor da propriedade do elemento pai */
+  border-radius: inherit;
+  width: var(--progress);
+}
+
+#progress-container {
+  cursor: pointer;
+}
+
+.button-active {
+  color: rgb(9, 188, 253);
+}
+
+.button-hover {
+  color: #000000;
+}
+
+#time-box {
+  margin-top: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  font-size: smaller;
+}
